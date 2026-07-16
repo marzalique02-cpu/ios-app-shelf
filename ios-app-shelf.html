@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="baidu-site-verification" content="codeva-G2TsZF1wdq" />
+<meta name="keywords" content="iOS马甲包,马甲包代上架,iOS上架,白包定制,企业签名,iOS企业签名,App Store上架,iOS代上架,马甲包上架,H5跳转,原生跳转,iOS签名,苹果上架,马甲包过审,iOS审核,苹果企业签名,iOS超级签名,TF上架,TestFlight上架,苹果开发者账号,iOS包上架,App上架代做,苹果应用上架,马甲包定制,苹果白包,iOS包过审,app上架,app出海">
+<meta name="description" content="一凡上架 - 专业iOS马甲包代上架、白包定制、企业签名服务。上架后再付款，一次性收费无隐藏费用。支持原生与H5跳转，3-7天快速上架。">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="iOS马甲包代上架 | 白包定制 | 企业签名 | 一凡上架">
+<meta property="og:description" content="一凡上架 - 专业iOS马甲包代上架、白包定制、企业签名服务。上架后再付款，一次性收费无隐藏费用。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="zh_CN">
+<link rel="canonical" href="http://yifanshangjia.cn/">
+<title>iOS马甲包代上架 | 白包定制 | 企业签名 | 一凡上架</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  :root{--primary:#1a56db;--primary-light:#3b82f6;--dark:#111827;--gray:#4b5563;--light-gray:#9ca3af;--bg:#f8fafc;--white:#ffffff;--border:#e5e7eb;--accent:#0ea5e9}
+  html{scroll-behavior:smooth}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;color:var(--dark);background:var(--bg);line-height:1.6}
+  a{text-decoration:none;color:inherit}
+
+  .container{max-width:1140px;margin:0 auto;padding:0 24px}
+
+  nav{position:fixed;top:0;left:0;right:0;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);z-index:100;border-bottom:1px solid var(--border)}
+  nav .container{display:flex;align-items:center;justify-content:space-between;height:64px}
+  nav .logo{font-size:20px;font-weight:700;color:var(--primary)}
+  nav .logo span{color:var(--accent)}
+  nav ul{list-style:none;display:flex;gap:32px}
+  nav ul a{font-size:14px;font-weight:500;color:var(--gray);transition:color .2s}
+  nav ul a:hover{color:var(--primary)}
+  .nav-cta{background:var(--primary);color:var(--white)!important;padding:8px 20px;border-radius:6px;font-size:13px;transition:background .2s}
+  .nav-cta:hover{background:var(--primary-light)!important}
+
+  .hero{padding:140px 0 100px;background:linear-gradient(135deg,#eff6ff 0%,#f0f9ff 50%,#e0f2fe 100%);position:relative;overflow:hidden}
+  .hero::before{content:'';position:absolute;top:-50%;right:-20%;width:600px;height:600px;background:radial-gradient(circle,rgba(59,130,246,.08) 0%,transparent 70%);border-radius:50%}
+  .hero .container{display:flex;align-items:center;gap:60px}
+  .hero-text{flex:1}
+  .hero-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(59,130,246,.1);color:var(--primary);font-size:13px;font-weight:600;padding:6px 14px;border-radius:20px;margin-bottom:20px}
+  .hero-badge::before{content:'';width:6px;height:6px;background:var(--primary);border-radius:50%;animation:pulse 2s infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+  .hero h1{font-size:42px;font-weight:800;line-height:1.2;margin-bottom:16px;color:var(--dark)}
+  .hero h1 em{font-style:normal;color:var(--primary);position:relative}
+  .hero h1 em::after{content:'';position:absolute;bottom:2px;left:0;right:0;height:8px;background:rgba(59,130,246,.15);z-index:-1}
+  .hero p{font-size:17px;color:var(--gray);margin-bottom:32px;max-width:480px}
+  .hero-buttons{display:flex;gap:14px;flex-wrap:wrap}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:8px;font-size:15px;font-weight:600;cursor:pointer;border:none;transition:all .25s}
+  .btn-primary{background:var(--primary);color:var(--white);box-shadow:0 4px 14px rgba(26,86,219,.25)}
+  .btn-primary:hover{background:var(--primary-light);box-shadow:0 6px 20px rgba(26,86,219,.35);transform:translateY(-1px)}
+  .btn-outline{background:var(--white);color:var(--primary);border:1.5px solid var(--primary)}
+  .btn-outline:hover{background:rgba(59,130,246,.05)}
+  .hero-visual{flex:0 0 380px}
+  .hero-card{background:var(--white);border-radius:16px;padding:28px;box-shadow:0 20px 60px rgba(0,0,0,.08);border:1px solid var(--border)}
+  .hero-card-header{display:flex;align-items:center;gap:12px;margin-bottom:20px}
+  .hero-card-icon{width:44px;height:44px;background:linear-gradient(135deg,var(--primary),var(--accent));border-radius:10px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:20px}
+  .hero-card-title{font-weight:700;font-size:15px}
+  .hero-card-sub{font-size:12px;color:var(--light-gray)}
+  .hero-card-stats{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .stat-item{background:var(--bg);border-radius:10px;padding:16px;text-align:center}
+  .stat-num{font-size:26px;font-weight:800;color:var(--primary)}
+  .stat-label{font-size:12px;color:var(--light-gray);margin-top:2px}
+
+  section{padding:80px 0}
+  .section-header{text-align:center;margin-bottom:56px}
+  .section-tag{font-size:13px;font-weight:600;color:var(--primary);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px}
+  .section-title{font-size:32px;font-weight:800;color:var(--dark);margin-bottom:12px}
+  .section-desc{font-size:16px;color:var(--light-gray);max-width:560px;margin:0 auto}
+
+  .services{background:var(--white)}
+  .services-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+  .service-card{padding:36px 28px;border-radius:14px;border:1px solid var(--border);transition:all .3s;position:relative;overflow:hidden}
+  .service-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--primary),var(--accent));transform:scaleX(0);transition:transform .3s;transform-origin:left}
+  .service-card:hover{box-shadow:0 12px 40px rgba(0,0,0,.06);transform:translateY(-4px);border-color:transparent}
+  .service-card:hover::before{transform:scaleX(1)}
+  .service-icon{width:52px;height:52px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:20px}
+  .service-icon.blue{background:rgba(59,130,246,.1);color:var(--primary)}
+  .service-icon.teal{background:rgba(14,165,233,.1);color:var(--accent)}
+  .service-icon.indigo{background:rgba(99,102,241,.1);color:#6366f1}
+  .service-card h3{font-size:18px;font-weight:700;margin-bottom:10px}
+  .service-card p{font-size:14px;color:var(--gray);line-height:1.7}
+  .service-features{list-style:none;margin-top:16px}
+  .service-features li{font-size:13px;color:var(--gray);padding:5px 0;display:flex;align-items:center;gap:8px}
+  .service-features li::before{content:'✓';color:var(--primary);font-weight:700;font-size:12px}
+  .service-price{margin-top:20px;padding-top:16px;border-top:1px dashed var(--border);display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  .price-label{font-size:12px;font-weight:600;color:var(--light-gray);background:var(--bg);padding:3px 10px;border-radius:4px}
+  .price-value{font-size:18px;font-weight:800;color:var(--primary)}
+  .price-note{font-size:12px;color:var(--light-gray)}
+
+  .advantages{background:var(--bg)}
+  .adv-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+  .adv-item{display:flex;gap:16px;padding:24px;background:var(--white);border-radius:12px;border:1px solid var(--border);transition:box-shadow .3s}
+  .adv-item:hover{box-shadow:0 8px 30px rgba(0,0,0,.05)}
+  .adv-num{flex:0 0 44px;height:44px;background:linear-gradient(135deg,var(--primary),var(--accent));color:#fff;border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px}
+  .adv-content h4{font-size:15px;font-weight:700;margin-bottom:4px}
+  .adv-content p{font-size:13px;color:var(--gray);line-height:1.6}
+
+  .process{background:var(--white)}
+  .process-steps{display:flex;gap:0;justify-content:center;align-items:flex-start;position:relative}
+  .process-steps::before{content:'';position:absolute;top:28px;left:10%;right:10%;height:2px;background:var(--border);z-index:0}
+  .step{flex:1;text-align:center;position:relative;z-index:1;padding:0 12px}
+  .step-circle{width:56px;height:56px;border-radius:50%;background:var(--white);border:2px solid var(--primary);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-weight:800;font-size:18px;color:var(--primary);transition:all .3s}
+  .step:hover .step-circle{background:var(--primary);color:var(--white)}
+  .step h4{font-size:14px;font-weight:700;margin-bottom:4px}
+  .step p{font-size:12px;color:var(--light-gray);line-height:1.5}
+
+  .faq{background:var(--bg)}
+  .faq-list{max-width:720px;margin:0 auto}
+  .faq-item{background:var(--white);border-radius:10px;margin-bottom:10px;border:1px solid var(--border);overflow:hidden}
+  .faq-q{padding:18px 24px;font-weight:600;font-size:15px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;transition:background .2s}
+  .faq-q:hover{background:rgba(59,130,246,.03)}
+  .faq-q::after{content:'+';font-size:18px;color:var(--light-gray);transition:transform .3s}
+  .faq-item.active .faq-q::after{content:'−';transform:rotate(180deg)}
+  .faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease}
+  .faq-item.active .faq-a{max-height:200px}
+  .faq-a p{padding:0 24px 18px;font-size:14px;color:var(--gray);line-height:1.7}
+
+  .cta-section{background:linear-gradient(135deg,#1e40af,#1a56db,#0ea5e9);color:var(--white);text-align:center;padding:80px 0}
+  .cta-section h2{font-size:32px;font-weight:800;margin-bottom:12px}
+  .cta-section p{font-size:16px;opacity:.85;margin-bottom:36px}
+  .cta-section .btn{background:var(--white);color:var(--primary);font-weight:700;box-shadow:0 8px 30px rgba(0,0,0,.15)}
+  .cta-section .btn:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(0,0,0,.2)}
+  .telegram-hint{margin-top:20px;font-size:14px;opacity:.7}
+  .telegram-hint a{color:#fff;text-decoration:underline}
+
+  footer{background:var(--dark);color:rgba(255,255,255,.6);padding:40px 0;text-align:center;font-size:13px}
+  footer a{color:rgba(255,255,255,.8)}
+
+  .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+  .hamburger span{display:block;width:22px;height:2px;background:var(--dark);border-radius:2px;transition:all .3s}
+
+  @media(max-width:768px){
+    .hamburger{display:flex}
+    nav ul{display:none;position:absolute;top:64px;left:0;right:0;background:rgba(255,255,255,.98);flex-direction:column;padding:16px 24px;gap:0;border-bottom:1px solid var(--border);box-shadow:0 8px 24px rgba(0,0,0,.06)}
+    nav ul.open{display:flex}
+    nav ul li{border-bottom:1px solid var(--border)}
+    nav ul li:last-child{border-bottom:none}
+    nav ul a{display:block;padding:14px 0;font-size:15px}
+    .nav-cta{display:inline-block;margin-top:8px;padding:10px 24px!important}
+    .hero .container{flex-direction:column;text-align:center}
+    .hero-visual{flex:none;width:100%;max-width:320px}
+    .hero h1{font-size:28px}
+    .hero p{margin:0 auto 28px}
+    .hero-buttons{justify-content:center}
+    .services-grid{grid-template-columns:1fr}
+    .service-price{flex-direction:column;align-items:flex-start;gap:4px}
+    .adv-grid{grid-template-columns:1fr}
+    .process-steps{flex-direction:column;align-items:center;gap:24px}
+    .process-steps::before{display:none}
+    .step{max-width:260px}
+    .faq-item.active .faq-a{max-height:400px}
+    section{padding:60px 0}
+    .section-title{font-size:24px}
+    .cta-section h2{font-size:24px}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <a href="#" class="logo">一凡上架</a>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+    <ul id="nav-menu">
+      <li><a href="#services">服务项目</a></li>
+      <li><a href="#advantages">核心优势</a></li>
+      <li><a href="#process">上架流程</a></li>
+      <li><a href="#faq">常见问题</a></li>
+      <li><a href="#contact" class="nav-cta">立即咨询</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-text">
+      <div class="hero-badge">上架后再付款 · 零风险</div>
+      <h1>iOS 马甲包<br><em>代上架</em>解决方案</h1>
+      <p>白包定制 · 原生/H5双模式跳转 · 全流程托管，让你的应用高效通过审核，快速上架 App Store</p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary">Telegram 咨询 →</a>
+        <a href="#services" class="btn btn-outline">了解服务</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card">
+        <div class="hero-card-header">
+          <div class="hero-card-icon">🚀</div>
+          <div>
+            <div class="hero-card-title">上架数据总览</div>
+            <div class="hero-card-sub">累计服务统计</div>
+          </div>
+        </div>
+        <div class="hero-card-stats">
+          <div class="stat-item"><div class="stat-num">98%</div><div class="stat-label">审核通过率</div></div>
+          <div class="stat-item"><div class="stat-num">3-7天</div><div class="stat-label">马甲包上架周期</div></div>
+          <div class="stat-item"><div class="stat-num">500+</div><div class="stat-label">成功案例</div></div>
+          <div class="stat-item"><div class="stat-num">7×24</div><div class="stat-label">在线支持</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Services</div>
+      <h2 class="section-title">核心服务</h2>
+      <p class="section-desc">从马甲包上架到白包定制、企业签名，提供一站式全流程专业服务</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon blue">📦</div>
+        <h3>iOS 马甲包代上架</h3>
+        <p>专业马甲包上架服务，规避审核风险，确保应用高效通过 App Store 审核</p>
+        <ul class="service-features">
+          <li>深度代码混淆与差异化管理</li>
+          <li>多账号隔离，降低关联风险</li>
+          <li>审核策略实时更新同步</li>
+          <li>被拒后免费二次提交</li>
+        </ul>
+        <div class="service-price"><span class="price-label">收费</span><span class="price-value">1,000 - 1,500 USDT</span><span class="price-note">视需求与质保期限定</span></div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon teal">🛡️</div>
+        <h3>白包定制</h3>
+        <p>提供合规白包定制方案，从UI到功能完全差异化设计，周期视项目需求而定</p>
+        <ul class="service-features">
+          <li>独立UI/UX设计，视觉完全差异化</li>
+          <li>原生功能模块定制开发</li>
+          <li>元数据与描述独立配置</li>
+          <li>周期根据项目需求评估</li>
+        </ul>
+        <div class="service-price"><span class="price-label">收费</span><span class="price-value">1,500 USDT 起</span><span class="price-note">根据具体需求定价</span></div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon indigo">⚡</div>
+        <h3>原生 & H5 跳转</h3>
+        <p>马甲包支持原生壳与H5页面灵活跳转，兼顾审核安全与业务功能完整</p>
+        <ul class="service-features">
+          <li>原生壳+H5热更新，灵活切换</li>
+          <li>审核期展示合规内容，过审即切换</li>
+          <li>支持WKWebView / SFSafariViewController</li>
+          <li>跳转逻辑可远程配置</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <div class="service-icon teal">🔐</div>
+        <h3>企业签名服务</h3>
+        <p>提供稳定的iOS企业签名服务，无需上架App Store即可分发安装，快速触达用户</p>
+        <ul class="service-features">
+          <li>企业证书签名，即装即用</li>
+          <li>无需审核，快速分发部署</li>
+          <li>签名稳定，掉签及时补签</li>
+          <li>支持多种分发方式</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="advantages" id="advantages">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Why Us</div>
+      <h2 class="section-title">为什么选择我们</h2>
+      <p class="section-desc">经验丰富的技术团队，让上架更省心</p>
+    </div>
+    <div class="adv-grid">
+      <div class="adv-item">
+        <div class="adv-num">01</div>
+        <div class="adv-content">
+          <h4>前大厂技术总监操盘，深耕 iOS 审核机制</h4>
+          <p>十几年开发经验，深谙iOS生态与审核规则变化，精准把握审核要点，技术实力保障上架成功率</p>
+        </div>
+      </div>
+      <div class="adv-item">
+        <div class="adv-num">02</div>
+        <div class="adv-content">
+          <h4>全流程托管服务</h4>
+          <p>从包体定制、代码混淆、账号管理到提交审核，全程托管无需操心</p>
+        </div>
+      </div>
+      <div class="adv-item">
+        <div class="adv-num">03</div>
+        <div class="adv-content">
+          <h4>灵活跳转方案</h4>
+          <p>原生/H5双模式架构，审核期与上线后无缝切换，保障业务连续性</p>
+        </div>
+      </div>
+      <div class="adv-item">
+        <div class="adv-num">04</div>
+        <div class="adv-content">
+          <h4>上架后再付款，一次性收费无隐形消费</h4>
+          <p>先上架后付费，零风险合作；报价即全价，中途不加价不追加，让您完全无后顾之忧</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="process" id="process">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Process</div>
+      <h2 class="section-title">上架流程</h2>
+      <p class="section-desc">标准化流程，每一步透明可控</p>
+    </div>
+    <div class="process-steps">
+      <div class="step">
+        <div class="step-circle">01</div>
+        <h4>沟通产品</h4>
+        <p>确认是否可上架</p>
+      </div>
+      <div class="step">
+        <div class="step-circle">02</div>
+        <h4>技术对接</h4>
+        <p>沟通产品和技术细节</p>
+      </div>
+      <div class="step">
+        <div class="step-circle">03</div>
+        <h4>报价与准备</h4>
+        <p>具体报价，准备上架资料</p>
+      </div>
+      <div class="step">
+        <div class="step-circle">04</div>
+        <h4>上架验收</h4>
+        <p>上架成功，客户验收</p>
+      </div>
+      <div class="step">
+        <div class="step-circle">05</div>
+        <h4>完成支付</h4>
+        <p>上架后24小时内支付费用</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">FAQ</div>
+      <h2 class="section-title">常见问题</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">马甲包和原包有什么区别？</div>
+        <div class="faq-a"><p>马甲包是对原应用进行UI、代码、元数据等多维度差异化处理后生成的新包，在App Store上呈现为独立应用，但核心功能可通过H5跳转等方式与原包保持一致。</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">原生和H5跳转模式有什么不同？</div>
+        <div class="faq-a"><p>原生模式使用原生代码构建壳应用，审核期间展示合规原生内容，过审后通过远程配置切换到业务页面；H5模式通过内嵌WebView加载网页内容，支持热更新无需重新提交审核。两种模式可根据需求灵活选择或组合使用。</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">白包定制需要多长时间？</div>
+        <div class="faq-a"><p>白包定制周期视具体项目需求而定，包括功能复杂度、UI差异化程度等因素，具体周期需沟通评估后确认。欢迎联系咨询获取准确排期。</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">被拒审了怎么办？</div>
+        <div class="faq-a"><p>我们提供被拒后免费二次提交服务，技术团队会分析拒审原因并针对性调整优化，确保顺利通过审核。</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">如何保证账号安全？</div>
+        <div class="faq-a"><p>采用独立开发者账号、独立网络环境、独立设备信息等多重隔离策略，确保各马甲包之间无关联风险。</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section" id="contact">
+  <div class="container">
+    <h2>立即开始上架</h2>
+    <p>专业团队为您量身定制 iOS 马甲包上架方案，欢迎通过 Telegram 联系咨询</p>
+    <a href="https://t.me/iosEnterprise123" class="btn" target="_blank">💬 Telegram 咨询</a>
+    <div class="telegram-hint">或搜索 Telegram 用户名 <a href="https://t.me/iosEnterprise123" target="_blank">@iosEnterprise123</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>© 2026 一凡上架 — 专业 iOS 马甲包代上架服务 | <a href="https://t.me/iosEnterprise123" target="_blank">Telegram</a></p>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.faq-q').forEach(q=>{
+  q.addEventListener('click',()=>{
+    const item=q.parentElement;
+    const wasActive=item.classList.contains('active');
+    document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('active'));
+    if(!wasActive) item.classList.add('active');
+  });
+});
+
+document.querySelectorAll('nav a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    e.preventDefault();
+    const target=document.querySelector(a.getAttribute('href'));
+    if(target) target.scrollIntoView({behavior:'smooth',block:'start'});
+    document.getElementById('nav-menu').classList.remove('open');
+  });
+});
+
+document.getElementById('hamburger').addEventListener('click',()=>{
+  document.getElementById('nav-menu').classList.toggle('open');
+});
+</script>
+</body>
+</html>

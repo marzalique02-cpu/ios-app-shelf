@@ -383,8 +383,23 @@
   <div class="container">
     <h2>立即开始上架</h2>
     <p>专业团队为您量身定制 iOS 马甲包上架方案，欢迎通过 Telegram 联系咨询</p>
-    <a href="https://t.me/yifanshangjia" class="btn" target="_blank">💬 Telegram 咨询</a>
-    <div class="telegram-hint">或搜索 Telegram 频道 <a href="https://t.me/yifanshangjia" target="_blank">@yifanshangjia</a></div>
+    
+    <!-- 修改后的 Telegram 按钮 -->
+    <a href="https://t.me/yifanshangjia" 
+       class="btn" 
+       target="_blank"
+       onclick="gtag_report_conversion('https://t.me/yifanshangjia');">
+       💬 Telegram 咨询
+    </a>
+    
+    <div class="telegram-hint">
+      或搜索 Telegram 频道 
+      <a href="https://t.me/yifanshangjia" 
+         target="_blank"
+         onclick="gtag_report_conversion('https://t.me/yifanshangjia');">
+         @yifanshangjia
+      </a>
+    </div>
   </div>
 </section>
 

@@ -384,7 +384,6 @@
     <h2>立即开始上架</h2>
     <p>专业团队为您量身定制 iOS 马甲包上架方案，欢迎通过 Telegram 联系咨询</p>
     
-    <!-- Telegram 按钮（已加入转化追踪） -->
     <a href="https://t.me/yifanshangjia" 
        class="btn" 
        target="_blank"
@@ -413,14 +412,14 @@
  function gtag_report_conversion(url) {
   var callback = function () {
     if (typeof(url) != 'undefined') {
-      window.open(url, '_blank');
+      window.open(url, '_blank');   // 改成 open，避免离开当前页
     }
   };
   gtag('event', 'conversion', {
-    'send_to': 'AW-18327081278/r2Q8CJ3W9NIcEL6ihKNE',
-    'value': 1.0,
-    'currency': 'CNY',
-    'event_callback': callback
+      'send_to': 'AW-18327081278/r2Q8CJ3W9NIcEL6ihKNE',
+      'value': 1.0,
+      'currency': 'CNY',
+      'event_callback': callback
   });
   return false;
 }
